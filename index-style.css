@@ -1,0 +1,566 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* layout */
+
+.navbar {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 5px;
+    transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #e0e0e0;
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.icon img {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.links ul {
+    text-align: right;
+    display: flex;
+    font-style: bold;
+    font-size: medium;
+    list-style: none;
+    padding: 0;
+    margin-left: 750px;
+    gap: 20px;
+
+}
+
+.links li {
+    display: inline;
+    margin-right: 10px;
+
+
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #b30b0b;
+}
+
+
+
+
+.main {
+    text-align: center;
+}
+
+
+
+/* home */
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 0px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f8f9fa;
+
+
+
+}
+
+
+.info {
+    margin-left: 100px;
+}
+
+.info .subtitle {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #495057
+}
+
+.info .title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000
+}
+
+.info p {
+    margin-top: -5px;
+    font-size: 22px;
+    color: #495057
+}
+
+.info-img {
+    list-style: none;
+    padding: 0;
+    margin-left: 300px;
+    gap: 20px;
+}
+
+.buttons {
+    padding-top: 1rem !important;
+    box-sizing: border-box;
+
+}
+
+.buttons .HIRE {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 100px !important;
+    padding: 0.65rem 0.9rem;
+    margin: 0 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff7a57;
+    border-color: #ff7a57;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons .HIRE:hover {
+    background-color: #e65a3a;
+    transform: scale(1.05);
+}
+
+
+.buttons .CV {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 100px !important;
+    padding: 0.65rem 0.9rem;
+    margin: 0 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons .CV:hover {
+    background-color: #1d2124;
+    transform: scale(1.05);
+}
+
+
+
+/* about */
+
+
+.about {
+    height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 150px;
+    height: 250px;
+    border-radius: 5%;
+    border: 4px solid #cbc9c9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgba(126, 18, 18, 0.3); 
+    pointer-events: none; 
+    user-select: none; 
+}
+
+
+.text-about {
+    flex: 1;
+    text-align: left;
+}
+
+.text-about .title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.text-about .subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.text-about .description {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.text-about .description p {
+    margin: 0 0 15px 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-about {
+        text-align: center;
+    }
+
+    .text-about .title {
+        font-size: 2rem;
+    }
+
+    .text-about .subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* service */
+
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 0px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* margin: 20px; */
+}
+
+.ser{
+    /* margin-left: 100px; */
+    text-align: center !important;
+    margin-bottom: 1px;
+}
+
+.ser .subtitle{
+    text-align: center;
+    color: #495057;
+    font-size:20px ;
+}
+
+.ser .title{
+    text-align: center;
+    font-size:30px ;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.ser .description{
+    text-align: center;
+    font-size:15px ;
+    margin-top: 0;
+}
+.row{
+    display: flex;
+    margin: 20px;
+}
+
+.row .card{
+    font-family: 'themify';
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    border: 1px solid #a2a5a5 !important;
+    box-shadow: 2px 3px 10px rgba(58, 59, 59, 0.3);
+    width: 220px;
+    height: 180px;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+
+    
+}
+.card .in{
+    text-align: center;
+    /* margin-top: 72px; */
+}
+
+
+.in .text{
+    font-weight: bold;
+    font-size: medium;
+
+}
+.in i{
+    display: block;
+    font-size: 40px;
+    margin-bottom: 18px;
+    color: #ff7a57;
+    
+}
+
+.row .card:hover{
+    background-color: #ff7a57;
+    transform: scale(1.05);
+    
+}
+
+.row .card:hover .in i{
+    color : white;
+}
+.row .card:hover .in .text{
+    color : white;
+}
+
+
+
+
+/* projects */
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 0px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.projects-container {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.projects-container .subtitle {
+    text-align: center;
+    color: #495057;
+    font-size: 20px;
+}
+
+.projects-container .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.row2 {
+    display: flex;
+    margin: 20px;
+}
+
+.row2 .card {
+    font-family: 'themify';
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    border: 1px solid #a2a5a5;
+    box-shadow: 2px 3px 10px rgba(255, 122, 87, 0.3);
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.row2 .card .card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.1s ease;
+    z-index: 1;
+}
+
+.row2 .card .card-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row2 .card .in {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.row2 .in .text {
+    font-weight: bold;
+    font-size: large;
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+.row2 .in i {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 18px;
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+.row2 .card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: top 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
+}
+
+.row2 .card:hover::before {
+    top: 0;
+    background-color: rgba(255, 122, 87, 0.7);
+}
+
+.row2 .card:hover .in i {
+    color: #000000;
+}
+
+.row2 .card:hover .in .text {
+    color: #000000;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+
+
+
+/* contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #ff7a57;
+    color: #ff7a57;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button i {
+    font-size: 24px;
+}
+
+.button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.button.facebock:hover {
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+
+.button.linkedin:hover {
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+.button.email:hover {
+    background-color: #d44638;
+    border-color: #d44638;
+}
+
+.button.github:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.button.phone:hover {
+    background-color: #25d366;
+    border-color: #25d366;
+}
